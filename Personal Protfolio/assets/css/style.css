@@ -1,0 +1,576 @@
+/** 
+Template Name: FM-FrontEnd Maker | Persional Protfolio - HTML Template
+Template URL: http://coderitsoltion.com
+Author: Shihab Warfaze 
+Author URI: http://coderitsoltion.com
+Description:AMBER HTML Template
+Keywords: html,css,js
+
+**/
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*::after,
+*::before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.4rem;
+	color: #2F2E41;
+	font-weight: 400;
+	line-height: 1.3;
+	overflow-x: hidden;
+}
+
+:root {
+	--h-color: #2F2E41;
+	--h1-size: 10rem;
+	--h2-size: 4.8rem;
+	--d-b-shadow: 0 15px 38px 0 rgba(0, 0, 0, 0.1);
+	--d-transition: all .3s ease-in-out;
+}
+
+:root {
+	--p-color: #6C63FF;
+	--s-color: #5b0cda;
+}
+
+.section-padding {
+	padding: 7.5rem 0;
+}
+
+.section-padding-top {
+	padding-top: 7rem;
+}
+
+.section-padding-bottom {
+	padding-bottom: 7rem;
+}
+
+.services-header {
+	text-align: center;
+}
+
+.section-title {
+	font-size: 3.5rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: var(--h-color);
+	text-align: center;
+	padding-bottom: 1rem;
+}
+
+.my-services:hover i {
+	transform: rotate(360deg);
+}
+
+.section-title-icon i {
+	text-align: center;
+	height: 3rem;
+	width: 3rem;
+	border-radius: 50%;
+	display: inline-block;
+	background: var(--h-color);
+	margin: 0 auto;
+	color: #ffffff;
+	line-height: 2.2;
+	margin-bottom: 2rem;
+	transition: var(--d-transition);
+
+}
+
+.section-title-icon {
+	position: relative;
+}
+
+.section-title-icon::after {
+	position: absolute;
+	content: '';
+	top: .8rem;
+	height: 4px;
+	width: 10rem;
+	left: -3.6rem;
+	background: var(--p-color);
+	z-index: -1;
+	border-radius: 100%;
+}
+
+.p-btn {
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #fff;
+	background: var(--p-color);
+	padding: 1rem 2rem;
+	border-color: var(--s-color);
+	border-style: solid;
+	border-width: 0px 0px 5px;
+	border-radius: 4px;
+	transition: var(--d-transition);
+}
+
+.p-btn:hover {
+	color: #fff;
+	background: var(--s-color);
+}
+
+.p-btn i {
+	margin-right: 10px;
+}
+
+/*************************/
+/**** Header TOP CSS *****/
+/*************************/
+#header {
+	top: 0;
+	width: 100%;
+	z-index: 99;
+	position: fixed;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	background: rgba(0, 0, 0, 0.36);
+}
+
+#header .row {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hamburger {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	font-weight: 900;
+	color: var(--p-color);
+	font-size: 3.5rem;
+}
+
+.logo-bars {
+	display: none;
+}
+
+.menu-area {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.menu-area ul {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+/* TODO Socail here  */
+.social-icon .social {
+	display: none;
+}
+
+.main-menu li a {
+	padding: 2rem 1.5rem;
+	display: inline-block;
+	text-decoration: none;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 500;
+	background: transparent;
+	position: relative;
+}
+
+.main-menu li a::before {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	right: 50%;
+	border-radius: 0 0 10px 10px;
+	content: "";
+	height: 4px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.main-menu li:hover a::before {
+	left: 10px;
+	right: 10px;
+	background: var(--p-color);
+}
+
+.main-menu li a::after {
+	position: absolute;
+	content: '';
+	top: 4px;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-top: 5px solid var(--p-color);
+	left: 50%;
+	right: 50%;
+	margin-left: -2.5px;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.main-menu li:hover a::after {
+	visibility: visible;
+	opacity: 1;
+}
+
+.main-menu li a i {
+	margin-right: 1rem;
+	color: var(--p-color);
+	position: relative;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.main-menu li:hover a i {
+	opacity: 1;
+	visibility: visible;
+}
+
+/*************************/
+/**** Header TOP CSS *****/
+/*************************/
+/*************************/
+/**** BANNER TOP CSS *****/
+/*************************/
+.banner-area {
+	background: url('../img/2.svg') no-repeat scroll 0 0 / 100% 100%;
+	position: relative;
+}
+
+/* 
+.banner-area::after {
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 100%;
+	background: url('../img/bgbg.png');
+	top: 0;
+	left: 0;
+	opacity: .6;
+} */
+
+/* Personal Animate Text */
+.personal-text h1 {
+	color: var(--h-color);
+	font-size: 50px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+
+.personal-text h2 {
+	font-size: 25px;
+	text-transform: uppercase;
+	color: var(--h-color);
+	margin-bottom: 25px;
+	font-weight: 700;
+}
+
+.personal-text {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 100%;
+	height: 638px;
+	text-align: center;
+	position: relative;
+	z-index: 22;
+}
+
+.personal-text .my-info {
+	padding-top: 8rem;
+}
+
+.personal-text h2 span {
+	display: inline-block;
+	color: var(--p-color);
+}
+
+.personal-text h2 b {
+	font-weight: 700;
+}
+
+.my-info p {
+	color: #fff;
+	font-size: 15px;
+}
+
+.cd-headline.clip span {
+	display: inline-block;
+	padding: 0 !important;
+}
+
+.banner-button {
+	display: flex;
+	align-items: center;
+	column-gap: 2rem;
+	justify-content: center;
+	padding-top: 5rem;
+}
+
+/* Toll tip */
+.about-tolltip ul li {
+	position: relative;
+}
+
+.about-tolltip ul li:not(:last-child)::after {
+	position: absolute;
+	content: '';
+	top: 100%;
+	left: calc(50% - 1.5px);
+	height: 100%;
+	width: 3px;
+	background: #000;
+	z-index: -1;
+}
+
+.about-tolltip ul li span {
+	background: #000;
+	color: #fff;
+	padding: .5rem 1rem;
+}
+
+
+.about-tolltip ul li .taoltip {
+	position: absolute;
+	width: 10rem;
+	top: -30px;
+	color: #fff;
+	text-align: center;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	font-size: 12px;
+	text-transform: uppercase;
+	left: -2.5rem;
+	opacity: 0;
+	visibility: hidden;
+	border-radius: 5px;
+}
+
+.about-tolltip ul li:hover .taoltip {
+	visibility: visible;
+	opacity: 1;
+}
+
+.about-tolltip ul {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	row-gap: 5rem;
+}
+
+.about-tolltip ul li a i {
+	color: #ffffff;
+	height: 5rem;
+	width: 5rem;
+	text-align: center;
+	line-height: 2.8;
+	background: var(--h-color);
+	border-radius: 50%;
+	display: inline-block;
+	font-size: 1.8rem;
+	transition: var(--d-transition);
+}
+
+.about-tolltip ul li a.active i,
+.about-tolltip ul li a i:hover {
+	background: var(--p-color);
+}
+
+.tab-content .tab-pane h2 {
+	color: var(--h-color);
+	font-size: 2.4rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-bottom: 1.5rem;
+	margin-bottom: 1.5rem;
+	position: relative;
+}
+
+.tab-content .tab-pane h2::after {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	width: 10rem;
+	height: 3px;
+	border-radius: 100%;
+	background: var(--p-color);
+}
+
+.tol-about .single-image {
+	width: 100%;
+	padding-top: 3rem;
+}
+
+.tol-about .single-image img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.tab-content p {
+	text-align: justify;
+	padding: 0 2rem;
+}
+
+.social ul {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 2rem;
+}
+
+.social ul li {
+	margin-right: .5rem;
+}
+
+.social ul li a i {
+	height: 4rem;
+	width: 4rem;
+	border-radius: 6px;
+	color: #ffffff;
+	background: var(--h-color);
+	font-size: 2rem;
+	text-align: center;
+	line-height: 2;
+	transition: var(--d-transition);
+	border-width: 0px 0px 3px;
+	border-style: solid;
+	border-color: var(--p-color);
+}
+
+.social ul li a i:hover {
+	background: var(--p-color);
+
+	border-color: var(--s-color);
+}
+
+.about-me .content h4 {
+	font-size: 1.8rem;
+	color: var(--h-color);
+	padding: 0 0 1rem 2rem;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.about-me {
+	background: #e8e8e844;
+}
+
+.single-skill {
+	margin-bottom: 3rem;
+}
+
+.single-skill h4 {
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	font-weight: 700;
+	padding-bottom: 1.5rem;
+}
+
+.single-skill .progress .progress-bar span:before {
+	position: absolute;
+	bottom: 0
+}
+
+.single-skill .progress .progress-bar {
+	position: relative;
+	background: var(--p-color);
+	overflow: visible !important;
+}
+
+.single-skill .progress {
+	height: 8px;
+	border-radius: 0px;
+	box-shadow: none;
+	overflow: visible !important;
+}
+
+.single-skill .progress .progress-bar span {
+	font-size: 16px;
+	right: -2px;
+	color: #fff;
+	position: absolute;
+	top: -17px;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 100%;
+	background: var(--p-color);
+	font-size: 13px;
+	font-weight: 400;
+}
+
+/*************************/
+/**** BANNER TOP CSS *****/
+/*************************/
+/*************************/
+/**** MY SERVICES CSS*****/
+/*************************/
+
+/*************************/
+/**** MY SERVICES CSS*****/
+/*************************/
