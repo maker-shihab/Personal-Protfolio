@@ -1,4 +1,28 @@
 $(document).ready(function () {
+  $(".menu-socail").click(function () {
+    $(".socail-open ").fadeToggle();
+  });
+  // Magnafic Popup
+  $(".protfolio-content").magnificPopup({
+    gallery: {
+      enabled: true,
+    },
+    type: "image",
+  });
+  $(".counter-up").counterUp({
+    delay: 10,
+    time: 1000,
+  });
+  $(".test-content").owlCarousel({
+    nav: true,
+    dots: false,
+    autoplay: true,
+    loop: true,
+    items: 1,
+  });
+});
+
+$(document).ready(function () {
   function Maheraz_Custom_JS() {
     var windowS = $(window),
       windowH = windowS.height(),
@@ -9,6 +33,7 @@ $(document).ready(function () {
       marginTop: -proejectdevide,
     });
   }
+
   //  Onepage Nav
 
   if ($.fn.onePageNav) {
@@ -20,9 +45,8 @@ $(document).ready(function () {
   }
 
   // Sticky JS
-
   jQuery(window).on("scroll", function () {
-    if ($(this).scrollTop() > 1) {
+    if ($(this).scrollTop() > 200) {
       $("#header").addClass("sticky");
     } else {
       $("#header").removeClass("sticky");
@@ -33,11 +57,6 @@ $(document).ready(function () {
   $(".menu").slicknav({
     prependTo: ".mobile-nav",
     closeOnClick: true,
-  });
-
-  // 	Social JS
-  $(".social-icon li a").on("click", function () {
-    $(".social").toggleClass("active");
   });
 });
 var tooltipTriggerList = [].slice.call(
