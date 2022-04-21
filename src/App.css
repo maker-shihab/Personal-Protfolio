@@ -1,5 +1,6 @@
 :root {
   --color-white: #fff;
+  --primary-color: #04b4e0;
 }
 body {
   padding: 30px 40px;
@@ -55,4 +56,30 @@ main {
   );
   background-size: 18px 18px;
   z-index: 1;
+}
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+  position: relative;
+}
+.section-title span {
+  color: #04b4e0;
+}
+.section-title::after {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 30px;
+  background-image: -webkit-repeating-radial-gradient(
+    center center,
+    #04b4e0,
+    #04b4e0 1px,
+    transparent 0px,
+    transparent 100%
+  );
+  background-size: 6px 6px;
+  top: 0px;
+  left: -10px;
+  z-index: -1;
+  opacity: 0.45;
 }

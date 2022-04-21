@@ -2,9 +2,11 @@ import React from 'react';
 
 const PortfolioPage = () => {
   return (
-    <div>
-      PortFolio
-    </div>
+    <main>
+      <div className="funfact_area">
+        <h3 className="section-title">Protfolio</h3>
+      </div>
+    </main>
   );
 };
 

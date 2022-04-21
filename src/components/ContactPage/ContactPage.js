@@ -2,9 +2,11 @@ import React from 'react';
 
 const ContactPage = () => {
   return (
-    <div>
-      Cotnact
-    </div>
+    <main>
+      <div className="funfact_area">
+        <h3 className="section-title">Contact</h3>
+      </div>
+    </main>
   );
 };
 
