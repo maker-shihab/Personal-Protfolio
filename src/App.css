@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+:root {
+  --color-white: #fff;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  padding: 30px 40px;
+  background: #222;
+  margin-left: 400px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-white);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans", sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn_primary {
+  padding: 10px 30px;
+  border-radius: 25px;
+  border: 2px solid white;
+  color: #fff;
+  font-weight: 500;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  column-gap: 15px;
+  transition: 0.3s all ease-in;
 }
-
-.App-link {
-  color: #61dafb;
+.btn_primary:hover {
+  color: #04b4e0;
+  border-color: #04b4e0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* GLOBAL CSS HERE */
+main {
+  margin-left: 400px !important;
+}
+.hp-dots {
+  position: absolute;
+  opacity: 0.08;
+  top: -8%;
+  left: -5%;
+  content: "";
+  height: 70%;
+  width: 38%;
+  background-image: -webkit-repeating-radial-gradient(
+    center center,
+    #fff,
+    #fff 3px,
+    transparent 0px,
+    transparent 100%
+  );
+  background-size: 18px 18px;
+  z-index: 1;
 }

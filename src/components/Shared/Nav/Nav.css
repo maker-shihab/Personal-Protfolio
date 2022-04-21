@@ -1,0 +1,26 @@
+nav ul li a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+  transition: 0.3s all ease-in;
+  margin-left: -25px;
+}
+nav ul li a:hover {
+  color: #04b4e0;
+}
+nav ul li a svg {
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.3s all ease-in;
+}
+nav ul li a:hover svg {
+  opacity: 1;
+  transform: scale(1);
+  width: auto;
+  color: #04b4e0;
+}
