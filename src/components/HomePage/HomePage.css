@@ -11,7 +11,6 @@
 .works_items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding-top: 30px;
   column-gap: 30px;
 }
 .single_work_text {
@@ -177,4 +176,31 @@
 }
 .pricing_single:hover .custome_title {
   border-color: #fff;
+}
+.funfact_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  column-gap: 30px;
+  padding-bottom: 50px;
+}
+.funfact_single {
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #333;
+  width: 100%;
+  transition: 0.3s all ease-in;
+}
+.funfact_single svg {
+  margin: 0 auto;
+  font-size: 50px;
+}
+.funfact_single h3 {
+  font-size: 26px;
+  padding-top: 10px;
+}
+.funfact_single:hover {
+  border-color: rgb(255, 255, 255);
 }

@@ -2,18 +2,18 @@ import React from "react";
 import Helmet from "react-helmet";
 import { AiFillStar, AiOutlineCheckCircle } from "react-icons/ai";
 import {
-  FaBug,
-  FaCloudDownloadAlt,
-  FaFreeCodeCamp,
-  FaLaptopCode,
+  FaBug, FaCloudDownloadAlt,
+  FaFreeCodeCamp, FaHandHoldingHeart, FaLaptopCode,
   FaQuoteRight,
   FaRegShareSquare
 } from "react-icons/fa";
-import { MdOutlineManageAccounts } from "react-icons/md";
+import { MdIncompleteCircle, MdOutlineManageAccounts, MdOutlineMarkEmailRead } from "react-icons/md";
+import { VscFeedback } from "react-icons/vsc";
 import { useNavigate } from "react-router-dom";
 import "./HomePage.css";
 const HomePage = () => {
   const navigate = useNavigate();
+  
   return (
     <main>
       <Helmet>
@@ -42,7 +42,7 @@ const HomePage = () => {
               Download CV <FaCloudDownloadAlt />{" "}
             </button>
             <button className="btn_primary">
-              Contact <FaCloudDownloadAlt />{" "}
+              Contact <MdOutlineMarkEmailRead />{" "}
             </button>
           </div>
         </div>
@@ -258,6 +258,23 @@ const HomePage = () => {
         <h3 className="section-title">
           Fun <span>Facts</span>
         </h3>
+        <div className="funfact_content">
+          <div className="funfact_single">
+            <MdIncompleteCircle />
+            <h3>Projects Complite</h3>
+            <p>250+</p>
+          </div>
+          <div className="funfact_single">
+            <FaHandHoldingHeart />
+            <h3>Happy Clients</h3>
+            <p>120+</p>
+          </div>
+          <div className="funfact_single">
+            <VscFeedback />
+            <h3>Positive Feadback</h3>
+            <p>100%</p>
+          </div>
+        </div>
       </div>
     </main>
   );
