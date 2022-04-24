@@ -1,25 +1,37 @@
-import React from 'react';
-import { AiFillFileText, AiOutlineHome } from 'react-icons/ai';
-import { FaRegEnvelope } from 'react-icons/fa';
-import { MdOutlineDeveloperMode } from 'react-icons/md';
-import { Link } from 'react-router-dom';
-import './Nav.css';
+import React from "react";
+import { AiFillFileText, AiOutlineHome } from "react-icons/ai";
+import { FaRegEnvelope } from "react-icons/fa";
+import { MdOutlineDeveloperMode } from "react-icons/md";
+import CustomLink from "../../CustomeLink/CustomeLink";
+import "./Nav.css";
 const Nav = () => {
   return (
     <nav>
-      <ul className='text-center pt-5'>
+      <ul className="text-center pt-5">
         <li>
-          <Link to={'/'}><AiOutlineHome />Home</Link>
+          <CustomLink to="/">
+            <AiOutlineHome />
+            Home
+          </CustomLink>
         </li>
         <li>
-          <Link to={'/resume'}><AiFillFileText />Resume</Link>
-          </li>
+          <CustomLink to="/resume">
+            <AiFillFileText />
+            Resume
+          </CustomLink>
+        </li>
         <li>
-          <Link to={'/portfolio'}><MdOutlineDeveloperMode />Portfolio</Link>
-          </li>
+          <CustomLink to="/portfolio">
+            <MdOutlineDeveloperMode />
+            Portfolio
+          </CustomLink>
+        </li>
         <li>
-          <Link to={'/contact'}><FaRegEnvelope />Contact</Link>
-          </li>
+          <CustomLink to="/contact">
+            <FaRegEnvelope />
+            Contact
+          </CustomLink>
+        </li>
       </ul>
     </nav>
   );

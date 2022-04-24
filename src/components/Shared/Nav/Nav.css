@@ -11,7 +11,7 @@ nav ul li a {
   margin-left: -25px;
 }
 nav ul li a:hover {
-  color: #04b4e0;
+  color: #04b4e0 !important;
 }
 nav ul li a svg {
   opacity: 0;
@@ -19,6 +19,12 @@ nav ul li a svg {
   transition: 0.3s all ease-in;
 }
 nav ul li a:hover svg {
+  opacity: 1;
+  transform: scale(1);
+  width: auto;
+  color: #04b4e0;
+}
+nav ul li a:focus svg {
   opacity: 1;
   transform: scale(1);
   width: auto;

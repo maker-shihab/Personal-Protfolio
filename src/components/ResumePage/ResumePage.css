@@ -1,0 +1,166 @@
+.timeline-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.timeline-item .left-part {
+  flex: 0 0 25%;
+  text-align: right;
+}
+.timeline-item .left-part .item-company {
+  font-size: 13px;
+  color: #aaa;
+  padding-left: 20px;
+}
+.timeline-item .divider {
+  flex: 0 0 10%;
+  height: 100%;
+  position: absolute;
+  background: #444;
+  width: 2px;
+  top: 0;
+  bottom: 0;
+  left: 30%;
+  text-align: center;
+  margin: 0 auto;
+}
+.timeline-item .divider::after {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #000;
+  left: -4px;
+  top: 9.5px;
+  border: 2px solid #04b4e0;
+}
+.timeline-item .divider::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #04b4e048;
+  left: calc(50% - 10px);
+  top: 5px;
+}
+.right-part {
+  flex: 0 0 65%;
+  padding-bottom: 20px;
+}
+.resume_content {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+.progress_content {
+  flex: 0 0 30%;
+}
+.progress_item {
+  padding-bottom: 15px;
+}
+.progress_line {
+  width: 100%;
+  height: 8px;
+  border-radius: 8px;
+  background: transparent;
+  display: block;
+  position: relative;
+  border: 1px solid #04b4e0;
+}
+.progress_line::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 90%;
+  background: #04b4e0;
+  border-radius: 8px;
+  top: 2px;
+  left: 2px;
+}
+.progress_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.progress_title h3 {
+  font-size: 15px;
+}
+.progress .knowleg {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+.progress .knowleg li {
+  padding: 3px 5px;
+  border-radius: 3px;
+  background: #04b4e0;
+  font-size: 13px;
+}
+.coding_progress {
+  padding-top: 20px;
+}
+.coding_progress .progress_line {
+  border: 1px solid #0ba376;
+}
+.coding_progress .progress_line::after {
+  background: #0ba376;
+}
+.print_design .progress_line::after {
+  width: 65%;
+}
+.logo_design .progress_line::after {
+  width: 80%;
+}
+.graphic_design .progress_line::after {
+  width: 90%;
+}
+.javascript .progress_line::after {
+  width: 95%;
+}
+.php .progress_line::after {
+  width: 85%;
+}
+.htmlcss .progress_line::after {
+  width: 98%;
+}
+.smarty .progress_line::after {
+  width: 75%;
+}
+.perl .progress_line::after {
+  width: 90%;
+}
+.resume_content {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.resume_certificat-item {
+  display: flex;
+  border: 2px solid #444;
+  border-radius: 10px;
+}
+.resume_certificat-item .logo {
+  background: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.resume_certificat-item .logo img {
+  height: 30px;
+  width: auto;
+  padding: 10px 20px;
+}
+.resume_certificat-item .text {
+  padding: 20px 20px;
+}
+.resume_certificat-item .text h3 {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.resume_certificat-item .text p {
+  color: #aaa;
+  font-size: 15px;
+}

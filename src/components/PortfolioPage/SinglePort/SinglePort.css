@@ -1,0 +1,47 @@
+.portfolio_single:hover .portfolio_text {
+  border-color: #fff;
+}
+.portfolio_thumb {
+  position: relative;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+.portfolio_socail {
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition: 0.3s all ease-in;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+  background: rgba(0, 0, 0, 0.356);
+}
+.portfolio_thumb:hover .portfolio_socail {
+  opacity: 1;
+  visibility: visible;
+}
+.portfolio_text {
+  padding: 10px;
+  border: 2px solid #333;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  transition: 0.3s all ease-in;
+}
+.portfolio_text a {
+  text-decoration: underline;
+  font-size: 14px;
+}
+.portfolio_text a:hover {
+  color: #04b4df;
+}
+.portfolio_text p {
+  font-size: 12px;
+}
+.portfolio_title {
+  font-size: 18px;
+}
