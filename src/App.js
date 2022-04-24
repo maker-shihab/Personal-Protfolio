@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import ContactPage from "./components/ContactPage/ContactPage";
 import HomePage from "./components/HomePage/HomePage";
+import NotFound from "./components/NotFound/NotFound";
 import PortfolioPage from "./components/PortfolioPage/PortfolioPage";
 import ResumePage from "./components/ResumePage/ResumePage";
 import Header from "./components/Shared/Header/Header";
@@ -15,6 +16,7 @@ function App() {
         <Route path="/resume" element={<ResumePage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
