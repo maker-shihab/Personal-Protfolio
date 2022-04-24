@@ -73,10 +73,10 @@
   position: absolute;
   content: "";
   height: 4px;
-  width: 90%;
+  width: 95%;
   background: #04b4e0;
   border-radius: 8px;
-  top: 2px;
+  top: 1px;
   left: 2px;
 }
 .progress_title {
@@ -96,7 +96,7 @@
 .progress .knowleg li {
   padding: 3px 5px;
   border-radius: 3px;
-  background: #04b4e0;
+  background: #333;
   font-size: 13px;
 }
 .coding_progress {
@@ -118,19 +118,16 @@
   width: 90%;
 }
 .javascript .progress_line::after {
-  width: 95%;
-}
-.php .progress_line::after {
-  width: 85%;
-}
-.htmlcss .progress_line::after {
-  width: 98%;
-}
-.smarty .progress_line::after {
   width: 75%;
 }
-.perl .progress_line::after {
-  width: 90%;
+.react .progress_line::after {
+  width: 65%;
+}
+.express .progress_line::after {
+  width: 20%;
+}
+.MongoDB .progress_line::after {
+  width: 25%;
 }
 .resume_content {
   display: flex;

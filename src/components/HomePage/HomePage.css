@@ -204,3 +204,7 @@
 .funfact_single:hover {
   border-color: rgb(255, 255, 255);
 }
+.funfact_single p {
+  font-weight: 700;
+  color: #04b4e0;
+}

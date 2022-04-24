@@ -228,7 +228,7 @@ const HomePage = () => {
               <h2 className="text-3xl font-bold custome_title">Silver</h2>
               <p className="font-normal text-sm text-gray-300 pt-4">Advanced Features</p>
             </div>
-            <h2 className="text-4xl text-white text-center font-bold uppercase">$64 <span className="text-sm font-normal block">Per Month</span></h2>
+            <h2 className="text-4xl text-white text-center font-bold uppercase">$100 <span className="text-sm font-normal block">Per Month</span></h2>
             <ul className="pt-5">
               <li><AiOutlineCheckCircle/> Features Details</li>
               <li><AiOutlineCheckCircle/> Features Details</li>
@@ -239,10 +239,10 @@ const HomePage = () => {
           </div>
           <div className="pricing_single">
             <div className="text-center pb-10">
-              <h2 className="text-3xl font-bold custome_title">Silver</h2>
+              <h2 className="text-3xl font-bold custome_title">Pro</h2>
               <p className="font-normal text-sm text-gray-300 pt-4">Advanced Features</p>
             </div>
-            <h2 className="text-4xl text-white text-center font-bold uppercase">$64 <span className="text-sm font-normal block">Per Month</span></h2>
+            <h2 className="text-4xl text-white text-center font-bold uppercase">$250 <span className="text-sm font-normal block">Per Month</span></h2>
             <ul className="pt-5">
               <li><AiOutlineCheckCircle/> Features Details</li>
               <li><AiOutlineCheckCircle/> Features Details</li>
