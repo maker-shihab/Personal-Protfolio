@@ -1,10 +1,9 @@
-import React from "react";
 import Helmet from "react-helmet";
 import "./ResumePage.css";
 
 const ResumePage = () => {
   return (
-    <main>
+    <main className="pt-6">
       <Helmet>
         <title>Resume</title>
       </Helmet>
@@ -56,7 +55,7 @@ const ResumePage = () => {
                 <div class="timeline-item clearfix">
                   <div class="left-part">
                     <h5 class="item-period">2020</h5>
-                    <span class="item-company">Coder IT  Solusion</span>
+                    <span class="item-company">Coder IT Solusion</span>
                   </div>
                   <div class="divider"></div>
                   <div class="right-part">
@@ -112,7 +111,9 @@ const ResumePage = () => {
                 <div class="timeline-item">
                   <div class="left-part">
                     <h5 class="item-period">2020</h5>
-                    <span class="item-company"><a href="/">Fiverr Marketplace</a></span>
+                    <span class="item-company">
+                      <a href="/">Fiverr Marketplace</a>
+                    </span>
                   </div>
                   <div class="divider"></div>
                   <div class="right-part">
@@ -129,7 +130,7 @@ const ResumePage = () => {
                 <div class="timeline-item clearfix">
                   <div class="left-part">
                     <h5 class="item-period">2021</h5>
-                    <span class="item-company">Upwork  Marketplace</span>
+                    <span class="item-company">Upwork Marketplace</span>
                   </div>
                   <div class="divider"></div>
                   <div class="right-part">

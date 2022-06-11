@@ -161,3 +161,11 @@
   color: #aaa;
   font-size: 15px;
 }
+@media screen and (max-width: 767px) {
+  .resume_content {
+    display: block;
+  }
+  .timeline-item .left-part .item-company {
+    padding-left: 0px;
+  }
+}

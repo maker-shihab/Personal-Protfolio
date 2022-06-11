@@ -1,10 +1,9 @@
-import React from "react";
 import { Helmet } from "react-helmet";
-import './NotFound.css';
+import "./NotFound.css";
 
 const NotFound = () => {
   return (
-    <main>
+    <main className="pt-6">
       <Helmet>
         <title>404 - Your Doctor</title>
       </Helmet>

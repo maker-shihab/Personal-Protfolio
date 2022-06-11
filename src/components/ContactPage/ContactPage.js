@@ -1,4 +1,3 @@
-import React from "react";
 import Helmet from "react-helmet";
 import { BsMailbox2, BsPatchCheck } from "react-icons/bs";
 import { FaMapMarked } from "react-icons/fa";
@@ -9,8 +8,8 @@ const ContactPage = () => {
     e.preventDefault();
   };
   return (
-    <main>
-      <Helmet >
+    <main className="pt-10">
+      <Helmet>
         <title>Contact</title>
       </Helmet>
       <div className="contact_area">
@@ -20,7 +19,7 @@ const ContactPage = () => {
         </div>
       </div>
       <div className="contact_container pt-5">
-        <div className="contact_items flex gap-3 justify-between">
+        <div className="contact_items block md:flex gap-3 justify-between">
           <div className="contact_single">
             <FaMapMarked />
             <h3 className="font-bold">Thakurgaon Bangladesh</h3>

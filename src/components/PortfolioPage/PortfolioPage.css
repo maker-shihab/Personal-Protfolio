@@ -4,3 +4,13 @@
   padding-top: 30px;
   grid-template-columns: repeat(3, 1fr);
 }
+@media screen and (max-width: 767px) {
+  .portfolio_items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 576px) {
+  .portfolio_items {
+    grid-template-columns: 1fr;
+  }
+}

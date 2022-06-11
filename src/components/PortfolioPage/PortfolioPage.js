@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import Helmet from 'react-helmet';
-import './PortfolioPage.css';
-import SinglePort from './SinglePort/SinglePort';
+import { useEffect, useState } from "react";
+import Helmet from "react-helmet";
+import "./PortfolioPage.css";
+import SinglePort from "./SinglePort/SinglePort";
 
 const PortfolioPage = () => {
   const [portfolio, setPortfolio] = useState([]);
   useEffect(() => {
-    fetch('portfolio.json')
-      .then(res => res.json())
-      .then(data => setPortfolio(data))
-  }, [])
+    fetch("portfolio.json")
+      .then((res) => res.json())
+      .then((data) => setPortfolio(data));
+  }, []);
   return (
-    <main>
-      <Helmet >
+    <main className="pt-14">
+      <Helmet>
         <title>Portfolio</title>
       </Helmet>
       <div className="funfact_area">
@@ -20,9 +20,9 @@ const PortfolioPage = () => {
       </div>
       <div className="portfolios_content">
         <div className="portfolio_items">
-          {
-            portfolio.map(portfolio => <SinglePort key={portfolio.id} portfolio={portfolio} />)
-          }
+          {portfolio.map((portfolio) => (
+            <SinglePort key={portfolio.id} portfolio={portfolio} />
+          ))}
         </div>
       </div>
     </main>

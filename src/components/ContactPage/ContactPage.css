@@ -2,6 +2,7 @@
   padding: 20px;
   border-radius: 15px;
   border: 2px solid #444;
+  margin: 0 auto;
   margin-top: 20px;
   text-align: center;
   max-width: 330px;
@@ -86,4 +87,10 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .form_content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }

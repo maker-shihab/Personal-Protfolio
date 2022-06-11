@@ -7,7 +7,16 @@
   padding: 30px;
   padding-top: 0px;
   top: 0;
+  transition: 0.4s all ease-in-out;
+  left: -20%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 99;
+}
+.header.header-active {
   left: 0;
+  opacity: 1;
+  visibility: visible;
 }
 .header_profile img {
   max-width: 150px;
@@ -25,4 +34,20 @@
 }
 .profile_socail ul li button svg {
   color: #fff;
+}
+.back-btn,
+.home-btn {
+  position: fixed;
+  left: 30px;
+  top: 20px;
+  z-index: 999;
+  background-color: #04b4e0;
+  padding: 10px;
+}
+.home-btn.disable,
+.back-btn.disable {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
 }
