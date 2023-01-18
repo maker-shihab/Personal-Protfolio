@@ -10,6 +10,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: var(--color-white);
+  padding-left: 430px;
 }
 h1,
 h2,
