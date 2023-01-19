@@ -5,12 +5,9 @@
   width: 100%;
   position: fixed;
   padding: 30px;
-  padding-top: 0px;
   top: 0;
   transition: 0.4s all ease-in-out;
   left: 0;
-  /* opacity: 0; */
-  /* visibility: hidden; */
   z-index: 99;
 }
 .header.header-active {

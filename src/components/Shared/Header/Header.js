@@ -1,40 +1,12 @@
-import { useState } from "react";
-import { AiOutlineHome } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
 import { FaCloudDownloadAlt, FaGithub } from "react-icons/fa";
-import { GrTwitter, GrUndo } from "react-icons/gr";
+import { GrTwitter } from "react-icons/gr";
 import Nav from "../Nav/Nav";
 import "./Header.css";
 const Header = () => {
-  const [isActive, setIsActive] = useState(false);
-  const handaleHome = (e) => {
-    e.preventDefault();
-    setIsActive((current) => !current);
-    e.currentTarget.classList.add("active");
-  };
-  const handaleHomeBack = (e) => {
-    e.preventDefault();
-    setIsActive((current) => !current);
-    e.currentTarget.classList.add("active");
-  };
-  // const navigate = useNavigate();
   return (
     <>
-      <div className="header_top_bar flex justify-between align-center pt-5">
-        <button
-          onClick={handaleHome}
-          className={isActive ? "home-btn disable" : "home-btn active"}
-        >
-          <AiOutlineHome />
-        </button>
-        <button
-          onClick={handaleHomeBack}
-          className={isActive ? "back-btn active" : "back-btn disable"}
-        >
-          <GrUndo />
-        </button>
-      </div>
-      <header className={isActive ? "header header-active" : "header"}>
+      <header className='header'>
         <div className="header_content text-center">
           <div className="header_profile">
             <img src="https://i.ibb.co/g7vtv4H/profile.jpg" alt="profile" />

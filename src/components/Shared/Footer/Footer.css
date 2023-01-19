@@ -1,0 +1,21 @@
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 0px;
+}
+.footer__container ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 20px;
+}
+.footer__container p,
+.footer__container ul li a {
+  color: #a6a6a6f8;
+  font-size: 14px;
+}
+.footer__container ul li a:hover {
+  color: var(--primary-color);
+}

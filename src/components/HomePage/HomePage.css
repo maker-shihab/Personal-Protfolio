@@ -37,8 +37,8 @@
 }
 .single_work:hover .single_work_thumb,
 .single_work:hover .single_work_text {
-  /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.14); */
-  border-color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.14);
+  border-color: var(--primary-color);
 }
 .single_testmonial {
   padding: 30px 0;
@@ -110,13 +110,16 @@
   transition: 0.3s all ease-in;
 }
 .single_testmonial:hover {
-  border: 2px solid #fff;
+  border: 2px solid var(--primary-color);
 }
 .single_testmonial:hover .testmonial_devider {
-  background: #fff;
+  background: var(--primary-color);
 }
 .single_testmonial:hover .testmonial_devider span {
-  border: 2px solid #fff;
+  border: 2px solid var(--primary-color);
+}
+.pricing_content {
+  gap: 30px;
 }
 .pricing_single {
   border-radius: 15px;
@@ -126,10 +129,10 @@
   transition: 0.3s all ease-in;
 }
 .pricing_single:hover {
-  border-color: #fff;
+  border-color: var(--primary-color);
 }
 .pricing_single:hover button {
-  border-color: #fff;
+  border-color: var(--primary-color);
 }
 .pricing_single ul li {
   display: flex;
@@ -137,11 +140,8 @@
   column-gap: 10px;
   font-size: 16px;
   margin-bottom: 7px;
-  cursor: pointer;
   justify-content: center;
-}
-.pricing_single ul li:hover {
-  text-decoration: underline;
+  text-align: center;
 }
 .pricing_single ul li svg {
   color: #04b4e0;
@@ -153,8 +153,13 @@
   color: #fff;
   border: 2px solid #333;
   border-radius: 25px;
+  font-weight: 500;
   text-align: center;
   transition: 0.3s all ease-in;
+}
+.pricing_single button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
 }
 .pricing_single {
   position: relative;
@@ -175,7 +180,7 @@
   transform: translateY(-50%);
 }
 .pricing_single:hover .custome_title {
-  border-color: #fff;
+  border-color: var(--primary-color);
 }
 .funfact_content {
   display: flex;
@@ -196,17 +201,21 @@
 .funfact_single svg {
   margin: 0 auto;
   font-size: 50px;
+  transition: 0.3s all ease;
 }
 .funfact_single h3 {
   font-size: 26px;
   padding-top: 10px;
 }
 .funfact_single:hover {
-  border-color: rgb(255, 255, 255);
+  border-color: var(--primary-color);
 }
 .funfact_single p {
   font-weight: 700;
   color: #04b4e0;
+}
+.funfact_single:hover svg {
+  color: var(--primary-color);
 }
 @media screen and (min-width: 1450px) {
   .home-page {

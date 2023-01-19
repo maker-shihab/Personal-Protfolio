@@ -7,12 +7,12 @@ import {
   FaHandHoldingHeart,
   FaLaptopCode,
   FaQuoteRight,
-  FaRegShareSquare,
+  FaRegShareSquare
 } from "react-icons/fa";
 import {
   MdIncompleteCircle,
   MdOutlineManageAccounts,
-  MdOutlineMarkEmailRead,
+  MdOutlineMarkEmailRead
 } from "react-icons/md";
 import { VscFeedback } from "react-icons/vsc";
 import { useNavigate } from "react-router-dom";
